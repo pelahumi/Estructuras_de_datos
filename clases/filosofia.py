@@ -13,3 +13,6 @@ class FilosofiaMVC():
             self.codigo2 = codigo2.upper()
         else:
             raise TypeError("La linea de codigo 2 no es una str")
+
+    def escribir_archivo(self):
+        archivo = open()
