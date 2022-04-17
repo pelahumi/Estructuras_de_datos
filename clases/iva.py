@@ -4,9 +4,9 @@ class Producto():
         self.naturaleza = naturaleza
 
 class FactoryFactura(Producto):
-    def __init__(self, naturaleza):
+    def __init__(self):
         self.precio_neto = 100
-        self.naturaleza = naturaleza
+        self.naturaleza = ""
 
     def set_naturaleza(self, naturaleza_to_be_set):
         if isinstance(naturaleza_to_be_set, str):
