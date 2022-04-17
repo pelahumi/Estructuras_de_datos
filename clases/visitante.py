@@ -1,3 +1,6 @@
+from multiprocessing import reduction
+
+
 class Bloque(): 
     # Un bloque es un conjunto de instrucciones ejecutadas 
     # unas detrás de otras. 
@@ -19,6 +22,12 @@ class Si():
         self.condicion = condicion 
         self.entonces = entonces 
         self.si_no = si_no 
+    
+    def comprobar_condicion(self):
+        if self.condicion == True:
+            return self.entonces
+        else:
+            return self.si_no
  
 class MientrasQue(): 
     # Representa una instrucción 'while'. 
