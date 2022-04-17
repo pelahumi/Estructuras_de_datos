@@ -9,6 +9,8 @@ El link del repositorio es: [Github](https://github.com/pelahumi/Estructuras_de_
 3.-[Ejercicio 2](#3)
 4.-[Ejercicio 3](#4)
 
+---
+
 ### Main<a name="1"></a>
 ```python3
 from clases.visitante import * 
