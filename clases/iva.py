@@ -15,6 +15,12 @@ class FactoryFactura(Producto):
             precio_bruto = self.precio_neto + (self.precio_neto * 5.5 / 100)
             return precio_bruto
         elif self.naturaleza == "servicio":
-            
+            precio_bruto = self.precio_neto + (self.precio_neto * 20 / 100)
+            return precio_bruto
+        else: 
+            raise TypeError("La naturaleza del producto no es correcta")
+
+
+
 
 
