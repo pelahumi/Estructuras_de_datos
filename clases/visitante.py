@@ -20,7 +20,13 @@ class Si():
         self.entonces = entonces 
         self.si_no = si_no 
     
-
+    def condicional(self):
+        if self.condicion == True:
+            print("El la condicion es cierta")
+            print(self.entonces)
+        else:
+            print("La condicion es falsa")
+            print(self.si_no)
  
 class MientrasQue(): 
     # Representa una instrucción 'while'. 
@@ -56,9 +62,14 @@ Mientras que(True, )
         Mostrar("OK")
         Mostrar("KO")
 """
-mostrar_ok = Mostrar("Ok")
+"""mostrar_ok = Mostrar("Ok")
 mostrar_ko = Mostrar("Ko")
 instruccion = Si("2 + 2 == 4", mostrar_ok, mostrar_ko)
 bloque = Bloque()
 bloque.agregarInstruction(instruccion)
 bucle = MientrasQue(True, bloque)
+"""
+ok = Mostrar("Ok")
+ko = Mostrar("Ko")
+condicional = Si("2 + 2 == 4", ok.mostrar(), ko.mostrar())
+print(condicional)
