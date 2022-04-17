@@ -20,8 +20,5 @@ class FilosofiaMVC():
         archivo.write("\n")
         archivo.write(self.codigo2)
 
-code1 = "Hola don Pepito"
-code2 = "Hola don José"
-escritura = FilosofiaMVC(code1, code2)
-escritura.escribir_archivo()
+
 

@@ -12,7 +12,7 @@ class FactoryFactura(Producto):
         if isinstance(naturaleza_to_be_set, str):
             self.naturaleza = naturaleza_to_be_set
         else:
-            raise TypeError("La naturaleza del producto tiene que ser un str")
+            raise ValueError("La naturaleza del producto tiene que ser un str")
 
     def iva(self):
         if self.naturaleza == "alimentación":
