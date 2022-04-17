@@ -4,8 +4,9 @@ class Producto():
         self.naturaleza = naturaleza
 
 class FactoryFactura(Producto):
-    def __init__(self, percio_neto, naturaleza):
-        super.__init__(100, naturaleza)
+    def __init__(self, naturaleza):
+        self.precio_neto = 100
+        self.naturaleza = naturaleza
 
     def set_naturaleza(self, naturaleza_to_be_set):
         if isinstance(naturaleza_to_be_set, str):
@@ -23,9 +24,7 @@ class FactoryFactura(Producto):
         else: 
             raise TypeError("La naturaleza del producto no es correcta")
 
-producto = FactoryFactura("alimentacio")
-producto.set_naturaleza("Alimentación")
-print(producto.naturaleza)
+
 
 
 
