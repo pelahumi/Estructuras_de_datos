@@ -7,8 +7,11 @@ class FactoryFactura(Producto):
     def __init__(self):
         super.__init__()
 
-    def crear(self):
-        self.naturaleza = str(input("Introduce la naturaleza del producto: "))
+    def set_naturaleza(self, naturaleza_to_be_set):
+        if isinstance(naturaleza_to_be_set, str):
+            self.naturaleza = naturaleza_to_be_set
+        else:
+            raise TypeError("La naturaleza del producto tiene que ser un str")
 
     def iva(self):
         if self.naturaleza == "alimentación":
@@ -20,6 +23,7 @@ class FactoryFactura(Producto):
         else: 
             raise TypeError("La naturaleza del producto no es correcta")
 
+producto = FactoryFactura.set_naturaleza("")
 
 
 
