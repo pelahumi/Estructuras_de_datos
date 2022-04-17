@@ -23,9 +23,11 @@ class Si():
     def comprobar_condicion(self):
         if self.condicion == True:
             self.entonces = Mostrar("Ok")
-            
+            self.entonces.mostrar()
+
         else:
             self.si_no = Mostrar("Ko")
+            self.si_no.mostrar()
  
 class MientrasQue(): 
     # Representa una instrucción 'while'. 
@@ -61,11 +63,7 @@ bloque_alternativa = Bloque()
 bloque_alternativa.agregarInstruction(alternativa) 
 bucle = MientrasQue(True, bloque_alternativa) """
 
-#------------------Resolución--------------------
-ok = Mostrar("Ok")
-ko = Mostrar("Ko")
-condicion = Si(2 + 2 == 4, ok.mostrar, ko.mostrar)
-print(condicion.comprobar_condicion())
+
 
 
 
