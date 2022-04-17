@@ -100,6 +100,11 @@ class Mostrar():
         print(self.mensaje)
 ```
 
+UML:
+
+<img width="416" alt="Captura de Pantalla 2022-04-17 a las 18 02 23" src="https://user-images.githubusercontent.com/91721764/163722861-7a7012e8-641a-4abd-8b60-a4fb3e5457cd.png">
+
+
 ### Ejercicio 2<a name="3"></a>
 ```python3
 class FilosofiaMVC():
@@ -124,6 +129,11 @@ class FilosofiaMVC():
         archivo.write("\n")
         archivo.write(self.codigo2)
 ```
+
+UML:
+
+<img width="236" alt="Captura de Pantalla 2022-04-17 a las 18 04 09" src="https://user-images.githubusercontent.com/91721764/163722884-09d6bb1d-e2f9-478e-9e07-5eb079d19fad.png">
+
 
 ### Ejercicio 3<a name="4"></a>
 ```python3
@@ -152,6 +162,12 @@ class FactoryFactura(Producto):
             return precio_bruto
         else: 
             print("La naturaleza del producto no es correcta")
+```
+
+UML:
+
+<img width="405" alt="Captura de Pantalla 2022-04-17 a las 18 07 01" src="https://user-images.githubusercontent.com/91721764/163722909-0c6c57b4-01fa-40d4-ad46-f55e46c1bb87.png">
+
 
 
 
