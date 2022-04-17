@@ -1,6 +1,3 @@
-from multiprocessing import reduction
-
-
 class Bloque(): 
     # Un bloque es un conjunto de instrucciones ejecutadas 
     # unas detrás de otras. 
@@ -37,6 +34,13 @@ class MientrasQue():
     def __init__(self, condicion, bloque): 
         self.condicion = condicion 
         self.bloque = bloque 
+
+    def bucle(self):
+        while self.condicion == True:
+            self.bloque = Bloque()
+            self.bloque.agregarInstruction[self.bloque]
+        else:
+            pass
  
 class Mostrar(): 
     # Una instrucción para mostrar un mensaje 
@@ -57,20 +61,9 @@ bloque_alternativa.agregarInstruction(alternativa)
 bucle = MientrasQue(True, bloque_alternativa) """
 
 #------------------Resolución--------------------
-"""
-Mientras que(True, )
-    Si("2 +2 == 4", mostrar_ok, mostra_ko)
-        Mostrar("OK")
-        Mostrar("KO")
-"""
-"""mostrar_ok = Mostrar("Ok")
-mostrar_ko = Mostrar("Ko")
-instruccion = Si("2 + 2 == 4", mostrar_ok, mostrar_ko)
-bloque = Bloque()
-bloque.agregarInstruction(instruccion)
-bucle = MientrasQue(True, bloque)
-"""
-ok = Mostrar("Ok")
-ko = Mostrar("Ko")
-condicion = Si(2 + 2 == 4, ok.mostrar(), ko.mostrar())
+ok = Mostrar()
+ko = Mostrar()
+condicion = Si(2 + 2 == 4, ok.mostrar, ko.mostrar)
+print(condicion.comprobar_condicion())
+
 
