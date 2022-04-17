@@ -5,9 +5,9 @@ El link del repositorio es: [Github](https://github.com/pelahumi/Estructuras_de_
 
 ## Índice:
 1.[main](#1).  
-2.[Ejercicio 1](#2). 
-3.[Ejercicio 2](#3). 
-4.[Ejercicio 3](#4). 
+2.[Ejercicio 1](#2).   
+3.[Ejercicio 2](#3).   
+4.[Ejercicio 3](#4).  
 
 ---
 
