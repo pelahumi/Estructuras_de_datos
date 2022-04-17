@@ -1,4 +1,3 @@
-#Enunciado
 class Bloque(): 
     # Un bloque es un conjunto de instrucciones ejecutadas 
     # unas detrás de otras. 
@@ -20,6 +19,8 @@ class Si():
         self.condicion = condicion 
         self.entonces = entonces 
         self.si_no = si_no 
+    
+
  
 class MientrasQue(): 
     # Representa una instrucción 'while'. 
@@ -35,14 +36,18 @@ class Mostrar():
     # en salida estándar. 
     def __init__(self, mensaje): 
         self.mensaje = mensaje 
+    
+    def mostrar(self):
+        print(self.mensaje)
+    
 
 #Ejemplo
-mostrar_ok = Mostrar('"OK"') 
+"""mostrar_ok = Mostrar('"OK"') 
 mostrar_ko = Mostrar('"KO"') 
 alternativa = Si("2 + 2 == 4", mostrar_ok, mostrar_ko) 
 bloque_alternativa = Bloque() 
 bloque_alternativa.agregarInstruction(alternativa) 
-bucle = MientrasQue(True, bloque_alternativa) 
+bucle = MientrasQue(True, bloque_alternativa) """
 
 #------------------Resolución--------------------
 """
