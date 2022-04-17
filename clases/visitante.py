@@ -63,5 +63,5 @@ bucle = MientrasQue(True, bloque)
 """
 ok = Mostrar("Ok")
 ko = Mostrar("Ko")
-condicion = Si("2 + 2 == 4", ok.mostrar(), ko.mostrar())
+condicion = Si(2 + 2 == 4, ok.mostrar(), ko.mostrar())
 
